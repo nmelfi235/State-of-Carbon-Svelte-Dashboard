@@ -8,5 +8,3 @@ export async function load({ fetch }) {
 	).then((res) => res.json());
 	return { grid_carbon_intensity_widget, intensity_today_widget };
 }
-
-export const prerender = true;
