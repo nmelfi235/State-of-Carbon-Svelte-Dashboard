@@ -32,9 +32,9 @@
 			},
 			{ responsive: true }
 		);
-		charge_target = current_widget_data().charge_target;
-		discharge_target = current_widget_data().discharge_target;
-		carbon_level = current_widget_data().carbon_level;
+		charge_target = (() => current_widget_data())().charge_target;
+		discharge_target = (() => current_widget_data())().discharge_target;
+		carbon_level = (() => current_widget_data())().carbon_level;
 	});
 </script>
 
